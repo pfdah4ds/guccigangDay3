@@ -64,12 +64,25 @@ console.log(quadrilateraleqn(2,3,4,6));
 
 //arrow function
 const sumwithArr = (a,b) =>{
-    console.log(a+b);
+    console.log('Blip',a+b);
 }
 a = 44;
 b = 66;
 sumwithArr(a,b);
 
-//ShorterArrow
+//ShorterArrow function
 const sumwithArr2 = (a,b) => a+b;
-sumwithArr2(b,a);
+console.log(sumwithArr2(b,a));
+
+
+//passing function as variable
+function duitafunction(func1,func2){
+    let a = 22;
+    let b = 33;
+    console.log('Flip',func1(a,b));
+    func2(a,b);
+}
+duitafunction(sumwithArr2,sumwithArr);
+
+
+//Arrays
