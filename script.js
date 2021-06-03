@@ -86,3 +86,77 @@ duitafunction(sumwithArr2,sumwithArr);
 
 
 //Arrays
+bhan = ['ligma','sugma','fugma',['Jan','Feb','Mar']];
+
+console.log(bhan);
+console.log(bhan[2]);
+console.log(bhan[3]);
+console.log(bhan[3][0]);
+console.log(bhan[3][1]);
+
+const array_3d =[
+    ['a','b','c'],
+    ['d','e','f'],
+    [['g','h','i'],['j','k','l']]
+];
+
+console.log(array_3d[0][0]);
+console.log(array_3d[1][2]);
+console.log(array_3d[2][0][0]);
+
+
+//array method
+anime = ['naruto','hxh'];
+console.log(anime);
+
+anime.push('JJK');
+anime.push('Monster');
+anime.push('Deathnote');
+console.log(anime);
+
+lls = anime.pop()
+console.log('Popped',lls);
+console.log(anime);
+
+anime.unshift('Moriarty');
+console.log(anime);
+
+anime.shift();
+console.log(anime);
+
+//slice 
+let array = [0,1,2,3,4,5,6,7,8];
+
+console.log(array.slice(0,3));
+console.log(array.slice(3));
+console.log(array.slice(4,6));
+console.log(array.slice(-3));
+
+console.log(array);
+
+//splice 
+let array2 = [0,1,2,3,4,5,6];
+console.log(array2);
+console.log(array2.splice(0,3));
+console.log(array2);
+
+//index of:
+let array3 = ['a','b','c',3,'e']
+console.log(`Index of e:${array3.indexOf('e')}`);
+console.log(`Index of e:${array3.indexOf('g')}`);
+
+
+//includes
+if (array3.includes('44')){
+    console.log('Wooe')
+}
+else{
+    console.log('boo');
+}
+if('Nepal'.includes('al')){
+    console.log('hehe');
+}
+else{
+    console.log('bebe');
+}
+
